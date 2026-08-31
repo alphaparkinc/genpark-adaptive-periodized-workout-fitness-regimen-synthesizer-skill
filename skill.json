@@ -1,0 +1,41 @@
+{
+  "name": "genpark-adaptive-periodized-workout-fitness-regimen-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Adaptive periodized workout fitness regimen synthesizer calculating undulating volume loads and RPE progression curves.",
+  "author": "genpark",
+  "category": "health-fitness",
+  "tags": [
+    "workout-generator",
+    "periodization",
+    "rpe-autoregulation",
+    "strength-training",
+    "fitness-planner"
+  ],
+  "inputs": {
+    "primary_goal": {
+      "type": "string"
+    },
+    "training_experience_level": {
+      "type": "string"
+    },
+    "weekly_available_days": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "workout_plan_id": {
+      "type": "string"
+    },
+    "periodization_model": {
+      "type": "string"
+    },
+    "volume_load_injury_prevention_score_pct": {
+      "type": "number"
+    },
+    "workout_schedule_ics_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
